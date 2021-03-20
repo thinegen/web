@@ -1,0 +1,12 @@
+
+{{ $CC := resources.Get "cc-icons-svg/cc.svg" | minify }}
+{{ $BY := resources.Get "cc-icons-svg/by.svg" | minify }}
+{{ $SA := resources.Get "cc-icons-svg/sa.svg" | minify }}
+
+<div id="copyright">
+    <a href="{{ ref . "/copyright" }}" id="copyright-link">
+        <img src="{{ $CC.Permalink }}" alt="CC" class="cc-copyright-icon">
+        <img src="{{ $BY.Permalink }}" alt="BY" class="cc-copyright-icon">
+        <img src="{{ $SA.Permalink }}" alt="SA" class="cc-copyright-icon">
+    </a>
+</div>

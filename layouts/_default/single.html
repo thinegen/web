@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<article>
+    <header>
+        <div class="center-text">
+            <h1>{{ .Title }}</h1>
+            {{ partial "translations.html" . }}
+        </div>
+    </header>
+    <hr />
+    {{ .Content }}
+</article>
+
+{{ partial "metadata.html" . }}
+{{ partial "copyright.html" . }}
+{{ partial "prev-next.html" . }}
+
+{{ end }}

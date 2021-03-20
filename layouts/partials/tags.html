@@ -1,0 +1,5 @@
+<div id="tags" class="center-text">
+  {{ range (.GetTerms "tags") }}
+    #<a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+  {{ end }}
+</div>

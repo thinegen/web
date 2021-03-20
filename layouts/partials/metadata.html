@@ -1,0 +1,18 @@
+{{ $dateTime := .Lastmod.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "2006-01-02" }}
+{{ $lastModified := .Lastmod.Format $dateFormat }}
+
+<hr />
+<div class="center-text metadata">
+  {{ partial "tags.html" . }}
+  <p>
+    Published: {{ partial "publishDate.html" . }} |
+
+    {{ if .GitInfo }}
+        {{ if .IsPage }}
+            Last update: <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commit/{{ .GitInfo.Hash }}">{{ end }}{{ $lastModified }}{{ if .IsPage }}</a> |
+      {{ end }}
+    {{ end }}
+    <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commits/main/content/{{ .Site.Language.Lang }}/{{ .File.Path }}">All changes</a>
+  </p>
+</div>

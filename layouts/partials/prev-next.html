@@ -1,0 +1,5 @@
+<hr />
+<div id="next-prev">
+    {{ with .PrevInSection }}<span class="next-prev-span">&larr; <a href="{{.Permalink}}">{{ .Title }}</a></span>{{ end }}
+    {{ with .NextInSection }}<span class="next-prev-span"><a href="{{.Permalink}}">{{ .Title }}</a> &rarr;</span>{{ end }}
+</div>

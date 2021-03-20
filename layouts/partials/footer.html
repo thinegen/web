@@ -1,0 +1,13 @@
+<div id="footer" class="center-text">
+    <p>
+        <a href="{{ relref . "/tags/" }}">Tags</a> | <a href="{{ relref . "rss.md" }}">RSS</a> | <a href="{{ relref . "sitemap.md" }}">Sitemap</a>
+    </p>
+
+    {{ if or (.IsSection) (.CurrentSection.IsHome) }}
+        <p>
+            {{range .Translations }}
+                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            {{end}}
+        </p>
+    {{ end }}
+</div>

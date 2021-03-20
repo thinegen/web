@@ -1,0 +1,64 @@
+baseURL = "https://blog.thinegen.de"
+title = "blog.thinegen.de"
+
+pygmentscodefences = true
+pygmentsoptions = "linenos=true"
+
+enableGitInfo = true
+rssLimit = 20
+
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+
+PluralizeListTitles = false
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+[frontmatter]
+  date = ["publishDate", "date", "lastmod"]
+  lastmod = [":git", "lastmod", "date", "publishDate"]
+
+[permalinks]
+  blog = "/:sections/:year/:month/:title/"
+
+[Params]
+  giturl = "https://github.com/thinegen/blog.thinegen.de"
+  dateFormat = "2006-01-02"
+
+[[languages.de.menu.main]]
+  name = "Blog"
+  url = "/de/"
+  weight = 1
+[[languages.en.menu.main]]
+  name = "Blog"
+  url = "/en/"
+  weight = 1
+
+[[languages.de.menu.main]]
+  name = "Shorts"
+  url = "/de/shorts/"
+  weight = 2
+[[languages.en.menu.main]]
+  name = "Shorts"
+  url = "/en/shorts/"
+  weight = 2
+
+[[languages.de.menu.main]]
+  name = "Impressum"
+  url = "/de/impressum/"
+  weight = 3
+[[languages.en.menu.main]]
+  name = "Imprint"
+  url = "/en/imprint/"
+  weight = 3
+
+[languages]
+  [languages.de]
+    languageName = "Deutsch"
+    contentDir = "content/de"
+    languageCode = "de-DE"
+  [languages.en]
+    languageName = "English"
+    contentDir = "content/en"
+    languageCode = "en-US"

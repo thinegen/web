@@ -1,0 +1,23 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{ hugo.Generator }}
+
+    {{ $css := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.Permalink }}" integrity="{{ $css.Data.Integrity }}">
+    {{ $footnoteJS := resources.Get "js/footnotes.js" | resources.Minify | resources.Fingerprint "sha512" }}
+    <script async defer src="{{ $footnoteJS.Permalink }}" integrity="{{ $footnoteJS.Data.Integrity }}"></script>
+
+    {{ $title := print .Title " | " .Site.Title }}
+    {{ if .IsHome }}{{ $title = print "Blog | " .Site.Title }}{{ end }}
+    <title>{{ $title }}</title>
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf `<link rel="%s" type="%s" href="%s" />` .Rel .MediaType.Type .Permalink | safeHTML }}
+    {{ end -}}
+
+    {{ if .IsTranslated }}
+        {{ range .Translations }}
+            <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
+        {{ end }}
+    {{ end }}
+</head>

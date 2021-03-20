@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul id="postrange">
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies.tags }}
+  <li>
+    #<a href="{{ relref .Page (printf "/tags/%s" $taxonomyname) }}">{{ $taxonomyname }}</a>: {{ $taxonomy.Count }}
+  </li>
+  {{ end }}
+</ul>
+
+{{ end }}

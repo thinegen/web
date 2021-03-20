@@ -1,0 +1,180 @@
+$backgroundColor: #121212;
+$middleBetweenThem: #6e7276;
+$foreGroundWhite: #c9d1d9;
+$linkBlue: #7cf;
+
+* {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+    direction: ltr;
+}
+
+code,
+code *,
+table td pre {
+    font-family: "Fira Code", monospace;
+    text-align: left;
+}
+
+pre {
+    overflow: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+header > .center-text {
+    margin: 3%;
+}
+
+.highlight > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > pre:nth-child(1) {
+    overflow: unset !important;
+}
+
+a {
+    color: $linkBlue;
+}
+
+body {
+    margin-top: 3em;
+    background-color: $backgroundColor;
+    color: $foreGroundWhite;
+}
+
+.li-vertical {
+    display: block;
+}
+
+#postrange {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#postrange li {
+    margin-bottom: 0.75em;
+}
+
+.hoverNote {
+    position: absolute;
+    background-color: $foreGroundWhite;
+    color: $backgroundColor;
+    left: 1em;
+    margin: 0;
+    bottom: 0.5em;
+    min-width: 10em;
+    padding: 0 1em;
+    border: 0.25em solid $middleBetweenThem;
+    visibility: hidden;
+}
+
+.metadata {
+    font-size: small;
+}
+
+#translations {
+    font-size: small;
+}
+
+#content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 1.5% 5%;
+    border: 0.15em solid $foreGroundWhite;
+}
+
+#header {
+    margin-bottom: 1%;
+}
+
+nav a {
+    margin: 0 5%;
+}
+
+.center-text {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.highlight {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.highlight pre {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.footnotes ol::before {
+    content: "Footnotes:";
+}
+
+blockquote {
+    border-left: 0.2em solid $foreGroundWhite;
+    padding-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    margin: 0 auto;
+}
+
+table td,
+table th {
+    border: 1px solid;
+    text-align: center;
+}
+
+.margin-center {
+    text-align: center;
+}
+
+#footer {
+    margin-top: 1%;
+    font-size: small;
+}
+
+#copyright {
+    text-align: center;
+}
+
+#copyright-link {
+    text-decoration: none;
+}
+
+.cc-copyright-icon {
+    width: 1em;
+    font-style: unset;
+    margin: 0 auto;
+}
+
+#next-prev {
+    font-size: small;
+    width: 33%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.next-prev-span {
+    margin: 0 auto;
+}
+
+#TOC {
+    border: 0.075em solid $foreGroundWhite;
+    padding: 1em;
+    margin: 1em 0;
+    display: inline-block;
+    overflow: auto;
+}
+
+#TableOfContents ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0.75em;
+}
+
+#TOC > h2 {
+    margin: 0;
+}

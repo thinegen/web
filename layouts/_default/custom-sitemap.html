@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul id="postrange">
+  {{ range .Site.Sections }}
+  <li class="li-vertical">
+    <a href="{{ absURL .Permalink }}">{{ .Title }}</a>
+    <ul>
+      {{ range .Pages.ByTitle }}
+        <il class="li-vertical">
+          <a href="{{ absURL .Permalink }}">{{ .Title }}</a>{{ partial "publishDate.html" . }}
+        </il>
+      {{ end }}
+    </ul>
+  </li>
+  {{ end }}
+  {{ range .Site.RegularPages }}
+    {{ if eq .Section "" }}
+      <li class="li-vertical">
+        <a href="{{ absURL .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+
+{{ end }}
