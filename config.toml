@@ -57,8 +57,8 @@ PluralizeListTitles = false
   [languages.de]
     languageName = "Deutsch"
     contentDir = "content/de"
-    languageCode = "de-DE"
+    languageCode = "de"
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
-    languageCode = "en-US"
+    languageCode = "en"
