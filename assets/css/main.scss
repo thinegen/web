@@ -47,7 +47,6 @@ h6 > a {
     text-decoration: none;
 }
 
-
 #TOC > h2 {
     text-decoration: none;
 }
@@ -208,9 +207,12 @@ tr:nth-child(2n) {
 }
 
 #TableOfContents ul {
-    list-style: none;
+    list-style: decimal;
     margin: 0;
-    padding-left: 0.75em;
+}
+
+#TableOfContents ul ul {
+    list-style: lower-alpha;
 }
 
 #TOC > h2 {
