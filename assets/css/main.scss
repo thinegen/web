@@ -1,3 +1,13 @@
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+@function middle($color1, $color2) {
+  @return mix($color1, $color2, 50%);
+}
+
 $backgroundColor: #121212;
 $backgroundColor10PercentTint: #2a2a2a;
 $middleBetweenBackgroundForeground: #6e7276;
