@@ -9,11 +9,8 @@
 }
 
 $backgroundColor: #121212;
-$backgroundColor10PercentTint: #2a2a2a;
-$middleBetweenBackgroundForeground: #6e7276;
 $foreGroundWhite: #ced6dd;
 $linkBlue: #7cf;
-$BetweenBackgroundLink: #456F89;
 
 * {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
@@ -32,7 +29,7 @@ table td pre {
 article > pre {
     border-left: 0.2em solid $foreGroundWhite;
     padding-left: 0.5em;
-    background-color: #272822;
+    background-color: tint($backgroundColor, 6%);
 }
 
 pre {
@@ -98,12 +95,12 @@ body {
     bottom: 0.5em;
     min-width: 15em;
     padding: 0 1em;
-    border: 0.25em solid $middleBetweenBackgroundForeground;
+    border: 0.25em solid middle($backgroundColor, $foreGroundWhite);
     visibility: hidden;
 }
 
 .hoverNote a {
-    color: $BetweenBackgroundLink;
+    color: shade($linkBlue, 33%);
 }
 
 .metadata {
@@ -172,7 +169,7 @@ table th {
 }
 
 tr:nth-child(2n) {
-    background-color: $backgroundColor10PercentTint;
+    background-color: tint($backgroundColor, 5%);
 }
 
 .margin-center {
