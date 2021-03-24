@@ -1,2 +1,11 @@
 [tableofcontents]
 other = "Inhalt"
+
+[metadata-published]
+other = "Veröffentlicht am"
+
+[metadata-last-update]
+other = "Letzte Änderung"
+
+[metadata-all-updates]
+other = "Alle Änderungen"

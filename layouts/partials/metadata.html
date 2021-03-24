@@ -6,13 +6,13 @@
 <div class="center-text metadata">
   {{ partial "tags.html" . }}
   <p>
-    Published: {{ partial "publishDate.html" . }} |
+    {{ i18n "metadata-published" }}: {{ partial "publishDate.html" . }} |
 
     {{ if .GitInfo }}
         {{ if .IsPage }}
-            Last update: <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commit/{{ .GitInfo.Hash }}">{{ end }}{{ $lastModified }}{{ if .IsPage }}</a> |
+        {{ i18n "metadata-last-update" }}: <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commit/{{ .GitInfo.Hash }}">{{ end }}{{ $lastModified }}{{ if .IsPage }}</a> |
       {{ end }}
     {{ end }}
-    <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commits/main/content/{{ .Site.Language.Lang }}/{{ .File.Path }}">All changes</a>
+    <a target="_blank" rel="noopener external" href="{{ $.Site.Params.giturl }}/commits/main/content/{{ .Site.Language.Lang }}/{{ .File.Path }}">{{ i18n "metadata-all-updates" }}</a>
   </p>
 </div>

@@ -1,2 +1,11 @@
 [tableofcontents]
 other = "Table of Contents"
+
+[metadata-published]
+other = "Published"
+
+[metadata-last-update]
+other = "Last update"
+
+[metadata-all-updates]
+other = "All changes"
