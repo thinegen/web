@@ -15,6 +15,13 @@
     </ul>
   </li>
   {{ end }}
+  <li>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <li>
+        <a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname | humanize }}</a>
+      </li>
+    {{ end }}
+  </li>
   {{ range .Site.RegularPages }}
     {{ if eq .Section "" }}
       <li class="li-vertical">
