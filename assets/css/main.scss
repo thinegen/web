@@ -1,8 +1,9 @@
 $backgroundColor: #121212;
 $backgroundColor10PercentTint: #2a2a2a;
-$middleBetweenThem: #6e7276;
+$middleBetweenBackgroundForeground: #6e7276;
 $foreGroundWhite: #ced6dd;
 $linkBlue: #7cf;
+$BetweenBackgroundLink: #456F89;
 
 * {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
@@ -18,7 +19,7 @@ table td pre {
     font-size: 1em;
 }
 
-article > pre > code {
+article > pre {
     border-left: 0.2em solid $foreGroundWhite;
     padding-left: 0.5em;
     background-color: #272822;
@@ -89,10 +90,14 @@ body {
     left: 1em;
     margin: 0;
     bottom: 0.5em;
-    min-width: 10em;
+    min-width: 15em;
     padding: 0 1em;
-    border: 0.25em solid $middleBetweenThem;
+    border: 0.25em solid $middleBetweenBackgroundForeground;
     visibility: hidden;
+}
+
+.hoverNote a {
+    color: $BetweenBackgroundLink;
 }
 
 .metadata {
@@ -123,7 +128,8 @@ nav a {
     text-align: center;
 }
 
-.highlight {
+.highlight,
+article > pre {
     width: 80%;
     margin: 0 auto;
 }
