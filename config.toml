@@ -23,7 +23,7 @@ PluralizeListTitles = false
   blog = "/:sections/:year/:month/:title/"
 
 [Params]
-  giturl = "https://github.com/thinegen/blog.thinegen.de"
+  giturl = "https://github.com/thinegen/blog"
   dateFormat = "2006-01-02"
 
 [[languages.de.menu.main]]
