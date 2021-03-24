@@ -48,10 +48,6 @@ h6 > a {
     text-decoration: none;
 }
 
-#TOC > h2 {
-    text-decoration: none;
-}
-
 header > .center-text {
     margin: 3%;
 }
@@ -204,12 +200,17 @@ tr:nth-child(2n) {
     margin: 0 auto;
 }
 
+@media screen and (min-width: 1400px) {
+    #TOC {
+        max-width: 33%;
+    }
+}
+
 #TOC {
     border: 0.075em solid $foreGroundWhite;
     padding: 1em;
     margin: 1em 0;
     overflow: auto;
-    max-width: 33%;
 }
 
 #TableOfContents ul {
@@ -221,6 +222,34 @@ tr:nth-child(2n) {
     list-style: lower-alpha;
 }
 
-#TOC > h2 {
+#TableOfContents a {
     margin: 0;
 }
+
+#TOCHeader > h2 {
+    margin: 0;
+    text-decoration: none;
+}
+
+#TOCHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#TOC-button {
+    outline: none;
+}
+
+$hamburger-padding-x           : 0px;
+$hamburger-padding-y           : 0px;
+$hamburger-layer-width         : 1.5em;
+$hamburger-layer-height        : 0.125em;
+$hamburger-layer-spacing       : 0.3125em;
+$hamburger-layer-color         : $foreGroundWhite;
+$hamburger-hover-opacity       : 1;
+
+$hamburger-types: (
+  minus
+);
+
+@import "hamburgers/hamburgers.scss";

@@ -8,7 +8,14 @@
         </div>
         <hr />
         <div id="TOC">
-            <h2>{{ i18n "tableofcontents" }}</h2>
+            <div id="TOCHeader">
+                <h2>{{ i18n "tableofcontents" }}</h2>
+                  <button id="TOC-button" class="hamburger hamburger--minus is-active" type="button" aria-label="Menu" aria-controls="navigation">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
+            </div>
             {{ .TableOfContents }}
         </div>
     </header>

@@ -8,6 +8,11 @@
     {{ $footnoteJS := resources.Get "js/footnotes.js" | resources.Minify | resources.Fingerprint "sha512" }}
     <script async defer src="{{ $footnoteJS.Permalink }}" integrity="{{ $footnoteJS.Data.Integrity }}"></script>
 
+    {{ if eq .Page.Params.layout "wiki" }}
+        {{ $wikiTocCollapseJS := resources.Get "js/wiki-toc-collapse.js" | resources.Minify | resources.Fingerprint "sha512" }}
+        <script async defer src="{{ $wikiTocCollapseJS.Permalink }}" integrity="{{ $wikiTocCollapseJS.Data.Integrity }}"></script>
+    {{ end }}
+
     {{ $title := print .Title " | " .Site.Title }}
     {{ if .IsHome }}{{ $title = print "Blog | " .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
