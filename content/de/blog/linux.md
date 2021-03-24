@@ -34,7 +34,7 @@ Linux ist hierarchisch organisiert. Das Dateisystem fängt hier bei ```/```, dem
 
 In Linux gibt es den Grundsatz
 
-> Everythings a file, Alles ist eine Datei
+> Everything is a file, Alles ist eine Datei
 
 Deswegen können auch Informationen wie die aktuelle Prozessorauslastung aus einer Datei ausgelesen werden (z.B. gibt ```cat /sys/block/sda/size``` die Größe der Festplatte ```sda``` aus).
 
@@ -70,7 +70,7 @@ drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
     Anzahl Hardlinks                letzte Änderung
 ~~~
 
-Das ```d``` am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
+[^2] Das ```d``` am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
 
 Es gibt drei Rechte:
 - das Leserecht: ```r``` (read)
@@ -90,7 +90,7 @@ Nutzer   Alle
 
 In diesem Fall darf der Nutzer also lesen, schreiben und das Verzeichnis betreten, während die Mitglieder der Gruppe und alle anderen nur lesen und das Verzeichnis betreten dürfen.
 
-Eine andere oft benutze Art Rechte zu schreiben ist die Umrechnung in das Oktalsystem[^2]. Hierfür addiert man die Werte der Rechte (```r=4```, ```w=2```, ```x=1```) im Oktalsystem:
+Eine andere oft benutze Art Rechte zu schreiben ist die Umrechnung in das Oktalsystem[^3]. Hierfür addiert man die Werte der Rechte (```r=4```, ```w=2```, ```x=1```) im Oktalsystem:
 
 ~~~
 rwx r-x r-x
@@ -110,7 +110,11 @@ rw-r--r--
 
 Für den Root-Benutzer gelten keine Einschränkungen. Er kann alle Dateien lesen oder ändern.
 
-[^2]: Im Oktalsystem gibt es nur die Zahlen von 0 bis 7. Eine Acht im Dezimalsystem (geschrieben 8{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}) ist eine 10 im Oktalsystem (10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). Auch die Rechenregeln ändern sich: 7{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} + 1{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} (und: 7{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}+1{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). [Wikipedia](https://de.wikipedia.org/wiki/Oktalsystem)
+[^2]: Zu Hardlinks: Es gibt zwei Arten von Links in Linux: Hard- und Softlinks. Mehrere Hardlinks sind gleichberechtigt, jeder Zugriff auf einen Hardlink ist ein Zugriff auf die Datei oder das Verzeichnis.
+
+    Ein Softlink verweist lediglich auf eine Datei oder ein Verzeichnis. Deswegen kann eine Datei gelöscht werden (alle Hardlinks löschen), aber ein Softlink noch existieren. Dieser verweist jedoch dann ins Leere.
+
+[^3]: Im Oktalsystem gibt es nur die Zahlen von 0 bis 7. Eine Acht im Dezimalsystem (geschrieben 8{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}) ist eine 10 im Oktalsystem (10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). Auch die Rechenregeln ändern sich: 7{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} + 1{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} (und: 7{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}+1{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). [Wikipedia](https://de.wikipedia.org/wiki/Oktalsystem)
 
 ### Versteckte Dateien
 
