@@ -4,14 +4,14 @@ $foreGroundWhite: #c9d1d9;
 $linkBlue: #7cf;
 
 * {
-    font-family: "Fira Sans", Arial, sans-serif;
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     direction: ltr;
 }
 
 code,
 code *,
 table td pre {
-    font-family: "Source Code Pro", monospace;
+    font-family: "Source Code Pro", 'Courier New', Courier, monospace, monospace;
     text-align: left;
     font-size: 1em;
 }
