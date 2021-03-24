@@ -193,8 +193,8 @@ table th {
     border: 0.075em solid $foreGroundWhite;
     padding: 1em;
     margin: 1em 0;
-    display: inline-block;
     overflow: auto;
+    max-width: 33%;
 }
 
 #TableOfContents ul {
