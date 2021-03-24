@@ -1,1 +1,7 @@
 sitemap: /sitemap.xml
+
+User-agent: *
+Disallow: /de/impressum/
+Disallow: /de/404/
+Disallow: /en/imprint/
+Disallow: /en/404/
