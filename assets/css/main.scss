@@ -6,6 +6,7 @@ $linkBlue: #7cf;
 * {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     direction: ltr;
+    font-variant-ligatures: no-common-ligatures;
 }
 
 code,
@@ -14,6 +15,12 @@ table td pre {
     font-family: "Source Code Pro", 'Courier New', Courier, monospace, monospace;
     text-align: left;
     font-size: 1em;
+}
+
+pre > code {
+    border-left: 0.2em solid $foreGroundWhite;
+    padding-left: 0.5em;
+    background-color: #272822;
 }
 
 pre {
@@ -124,7 +131,8 @@ table {
 table td,
 table th {
     border: 1px solid;
-    text-align: center;
+    text-align: left;
+    padding: 0.1em 0.5em;
 }
 
 .margin-center {
