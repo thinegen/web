@@ -88,7 +88,7 @@ Nutzer   Alle
     Gruppe
 ~~~
 
-In diesem Fall darf der Nutzer also lesen, schreiben und das Verzeichnis betreten, während die Mitglieder der Gruppe und alle anderen nur lesen und das Verzeichnis betretens dürfen.
+In diesem Fall darf der Nutzer also lesen, schreiben und das Verzeichnis betreten, während die Mitglieder der Gruppe und alle anderen nur lesen und das Verzeichnis betreten dürfen.
 
 Eine andere oft benutze Art Rechte zu schreiben ist die Umrechnung in das Oktalsystem[^2]. Hierfür addiert man die Werte der Rechte (```r=4```, ```w=2```, ```x=1```) im Oktalsystem:
 
@@ -107,6 +107,8 @@ Für Dateien und Verzeichnisse ist meistens die Berechtigung ```644``` geeignet:
 42 4  4
 rw-r--r--
 ~~~
+
+Für den Root-Benutzer gelten keine Einschränkungen. Er kann alle Dateien lesen oder ändern.
 
 [^2]: Im Oktalsystem gibt es nur die Zahlen von 0 bis 7. Eine Acht im Dezimalsystem (geschrieben 8{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}) ist eine 10 im Oktalsystem (10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). Auch die Rechenregeln ändern sich: 7{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} + 1{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}} (und: 7{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}}+1{{< rawhtml >}}<sub>10</sub>{{< /rawhtml >}} = 10{{< rawhtml >}}<sub>8</sub>{{< /rawhtml >}}). [Wikipedia](https://de.wikipedia.org/wiki/Oktalsystem)
 
