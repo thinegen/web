@@ -163,7 +163,7 @@ $ ls -l # Das hier ist ein Kommentar, der ignoriert wird.
 
 Um mehr über einen Befehl zu erfahren helfen die sogenannten Man-Pages, die man mit
 
-    $ man Befehl
+    man Befehl
 aufrufen kann.
 
 ### Wichtige Befehle
@@ -172,13 +172,13 @@ Die folgenden Befehle werden öfter gebraucht. Falls ein Befehl nicht zu Kommand
 
 - **```cat```**: Ausgabe des Inhalts einer Datei
 - **```cd```**: Wechselt den aktuellen Ordner
-    - ```$ cd ~ # wechselt in den Home-Ordner des Nutzers```
-    - ```$ cd .. # Einen Ordner in der Hierarchie nach oben```
+    - ```cd ~ # wechselt in den Home-Ordner des Nutzers```
+    - ```cd .. # Einen Ordner in der Hierarchie nach oben```
 - **```chmod```**: Ändert die Dateiberechtigungen
-    - ```$ chmod g+x Datei # Gibt der Gruppe der Datei Ausführungsrechte```
-    - ```$ chmod 644 Datei # Ändert die Berechtigung zu rw-r--r--```
+    - ```chmod g+x Datei # Gibt der Gruppe der Datei Ausführungsrechte```
+    - ```chmod 644 Datei # Ändert die Berechtigung zu rw-r--r--```
 - **```chown```**: Ändert den Besitzer einer Datei. Der neue Besitzer muss auf dem System existieren
-    - ```$ chown besitzer-neu:gruppe-neu Datei```
+    - ```chown besitzer-neu:gruppe-neu Datei```
 - **```cp```**: Kopiert eine Datei
     - ```cp Quelle Ziel # Kopiert Quelle nach Ziel```
     - ```cp -r Quelle Ziel # Kopiert Quelle rekursiv nach Ziel (für Ordner)```
