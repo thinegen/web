@@ -1,7 +1,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+
+    {{ $favicon := resources.Get "img/favicon.svg" }}
+    {{ $faviconMin := $favicon | resources.Minify | resources.Fingerprint "sha512" }}
+    <link rel="icon" href="{{ $faviconMin.Permalink }}" integrity="{{ $faviconMin.Data.Integrity }}">
+
     {{ hugo.Generator }}
 
     {{ $css := resources.Get "css/main.scss" | toCSS | minify | fingerprint }}
@@ -26,4 +30,6 @@
             <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />
         {{ end }}
     {{ end }}
+
+    <meta name="description" content="{{if .Description }}{{ .Description | safeHTML }}{{ else }}{{ .Summary | safeHTML }}{{ end }}"/>
 </head>

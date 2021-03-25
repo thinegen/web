@@ -7,6 +7,8 @@ layout: wiki
 
 Eine kurze Einführung in Linux mit Aufbau, Befehlen und einigen Grundkonzepten.
 
+<!--more-->
+
 ## Organisation
 
 Linux ist hierarchisch organisiert. Das Dateisystem fängt hier bei ```/```, dem sogenannten Root-Verzeichnis, an.[^1] Darunter kommen dann folgende Ordner:
