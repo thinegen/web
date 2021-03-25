@@ -247,13 +247,10 @@ nav#TableOfContents {
 }
 
 @import "native.scss";
-// override line highlight, tetradic of $link and $text
 .chroma .hl { background-color: shade(#9d5024, 15%); }
-// override line numbers, a bit to dark,
-// tetradic color of old line color and line highlight
-.chroma .hl .lnt { color: #9d9d9d }
+.chroma .lnt { color: shade($textColor, 10%) }
 .chroma { color: $textColor; background-color: $secondaryColor; }
-.chroma .c1 { color: tint(#6272a4, 10%); }
+.chroma .c1 { color: tint(#6272a4, 33%); }
 
 $hamburger-padding-x           : 0px;
 $hamburger-padding-y           : 0px;
