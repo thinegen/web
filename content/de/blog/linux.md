@@ -60,7 +60,9 @@ drwxr-xr-x 3 thinegen thinegen 4096 Mar 21 18:50 resources
 drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
 {{< /highlight >}}
 
-Die einzelnen Felder ergeben sich wie folgt:
+```total``` beschreibt die Anzahl der belegten Blöcke[^Block] im Dateisystem. Die anderen Felder ergeben sich wie folgt:
+
+[^Block]: s. [Wikipedia](https://de.wikipedia.org/wiki/Datenblock)
 
 {{< highlight Bash >}}
 Berechtigungen Nutzer   Gruppe Größe              Name
@@ -70,12 +72,12 @@ drwxr-xr-x 2 thinegen thinegen 4096 Mar 21 18:48 static
     Anzahl Hardlinks                letzte Änderung
 {{< /highlight >}}
 
-[^2] Das ```d``` am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
+[^2] Das **```d```** am Anfang zeigt an, das es sich um ein Verzeichnis (directory) handelt. Die Größe eines Verzeichnisses ist aber nicht die Summe aller enthaltenen Dateien und Verzeichnisse, sondern nur die Größe der Information über das Verzeichnis selbst (z.B. Datum der letzten Änderung o.ä.).
 
 Es gibt drei Rechte:
-- das Leserecht: ```r``` (read)
-- das Schreibrecht: ```w``` (write)
-- das Ausführungsrecht: ```x``` (execute)
+- das Leserecht: **```r```** (read)
+- das Schreibrecht: **```w```** (write)
+- das Ausführungsrecht: **```x```** (execute)
     - für Verzeichnisse: Recht das Verzeichnis zu betreten
 
 Um die Rechte auszulesen teilt man sie in Dreier-Gruppen auf:
@@ -164,7 +166,7 @@ aufrufen kann.
 
 ### Wichtige Befehle
 
-Die folgenden Befehle werden öfter gebraucht. Falls ein Befehl nicht zu Kommandozeile zurückkehrt, kann er meistens mit ```q``` beendet werden.
+Die folgenden Befehle werden öfter gebraucht. Falls ein Befehl nicht zu Kommandozeile zurückkehrt, kann er meistens mit **```q```** beendet werden.
 
 - **```cat```**: Ausgabe des Inhalts einer Datei
 - **```cd```**: Wechselt den aktuellen Ordner
