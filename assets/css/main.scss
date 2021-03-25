@@ -9,9 +9,9 @@
 }
 
 $backgroundColor: #121212;
-$textColor: #ced6dd;
-$linkColor: tint(#24909d, 33%);
-$secondaryColor: #202020; // Background of Code
+$textColor: #bbb;
+$linkColor: #8be9fd;
+$secondaryColor: #222129; // Background of Code
 
 * {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
@@ -110,7 +110,7 @@ body {
 }
 
 #content {
-    width: 75%;
+    width: 66%;
     margin: 0 auto;
     padding: 1.5% 5%;
     border: 0.15em solid $textColor;
@@ -247,7 +247,8 @@ tr:nth-child(2n) {
 // override line numbers, a bit to dark,
 // tetradic color of old line color and line highlight
 .chroma .hl .lnt { color: #9d9d9d }
-.chroma { color: $textColor }
+.chroma { color: $textColor; background-color: $secondaryColor; }
+.chroma .c1 { color: tint(#6272a4, 10%); }
 
 $hamburger-padding-x           : 0px;
 $hamburger-padding-y           : 0px;
