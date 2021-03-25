@@ -160,7 +160,7 @@ $ ls -l # Das hier ist ein Kommentar, der ignoriert wird.
   Parameter
 {{< /highlight >}}
 
-Um mehr über einen Befehl zu erfahren helfen die sogenannten Man-Pages, die man mit
+Um mehr über einen Befehl zu erfahren, helfen die sogenannten Man-Pages, die man mit
 
     man Befehl
 aufrufen kann.
