@@ -3,11 +3,10 @@ title: "Linux"
 publishDate: 2021-03-21T18:50:57+01:00
 tags: ["linux"]
 layout: wiki
+description: "Eine kurze Einführung in Linux mit Aufbau, Befehlen und einigen Grundkonzepten."
 ---
 
 Eine kurze Einführung in Linux mit Aufbau, Befehlen und einigen Grundkonzepten.
-
-<!--more-->
 
 ## Organisation
 

@@ -31,5 +31,7 @@
         {{ end }}
     {{ end }}
 
-    <meta name="description" content="{{if .Description }}{{ .Description | safeHTML }}{{ end }}"/>
+    {{if .Description }}
+        <meta name="description" content="{{ .Description | safeHTML }}"/>
+    {{ end }}
 </head>
