@@ -14,7 +14,6 @@ $linkColor: #8be9fd;
 $secondaryColor: #222129; // Background of Code
 
 * {
-    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     direction: ltr;
     font-variant-ligatures: no-common-ligatures;
 }
@@ -35,6 +34,7 @@ article > pre {
 
 h1 {
     margin: 0;
+    font-size: 2em;
 }
 
 h2 {
@@ -61,6 +61,7 @@ a {
 }
 
 body {
+    font-family: "Fira Sans", Arial, Helvetica, sans-serif;
     margin-top: 3em;
     background-color: $secondaryColor;
     color: $textColor;
