@@ -9,8 +9,9 @@
 }
 
 $backgroundColor: #121212;
-$foreGroundWhite: #ced6dd;
-$linkBlue: #7cf;
+$textColor: #ced6dd;
+$linkColor: tint(#24909d, 33%);
+$secondaryColor: #202020; // Background of Code
 
 * {
     font-family: "Fira Sans", Arial, Helvetica, sans-serif;
@@ -19,20 +20,16 @@ $linkBlue: #7cf;
 }
 
 code,
-code *,
-table td pre {
+code * {
     font-family: "Source Code Pro", 'Courier New', Courier, monospace;
     text-align: left;
     font-size: 1em;
 }
 
 article > pre {
-    border-left: 0.2em solid $foreGroundWhite;
+    border-left: 0.2em solid $textColor;
     padding-left: 0.5em;
-    background-color: tint($backgroundColor, 6%);
-}
-
-pre {
+    background-color: $secondaryColor;
     overflow: auto;
 }
 
@@ -51,7 +48,7 @@ h3 > a,
 h4 > a,
 h5 > a,
 h6 > a {
-    color: $foreGroundWhite;
+    color: $textColor;
     text-decoration: none;
 }
 
@@ -59,18 +56,14 @@ header > .center-text {
     margin: 3%;
 }
 
-.highlight > div:nth-child(1) > table:nth-child(1) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > pre:nth-child(1) {
-    overflow: unset !important;
-}
-
 a {
-    color: $linkBlue;
+    color: $linkColor;
 }
 
 body {
     margin-top: 3em;
-    background-color: $backgroundColor;
-    color: $foreGroundWhite;
+    background-color: $secondaryColor;
+    color: $textColor;
 }
 
 .li-vertical {
@@ -88,19 +81,24 @@ body {
 
 .hoverNote {
     position: absolute;
-    background-color: $foreGroundWhite;
+    background-color: $textColor;
     color: $backgroundColor;
     left: 1em;
     margin: 0;
     bottom: 0.5em;
     min-width: 15em;
     padding: 0 1em;
-    border: 0.25em solid middle($backgroundColor, $foreGroundWhite);
+    border: 0.25em solid middle($backgroundColor, $textColor);
     visibility: hidden;
 }
 
 .hoverNote a {
-    color: shade($linkBlue, 33%);
+    color: shade($linkColor, 33%);
+}
+
+.footnote-ref {
+    font-weight: bold;
+    padding: 0.3em;
 }
 
 .metadata {
@@ -115,7 +113,8 @@ body {
     width: 75%;
     margin: 0 auto;
     padding: 1.5% 5%;
-    border: 0.15em solid $foreGroundWhite;
+    border: 0.15em solid $textColor;
+    background-color: $backgroundColor;
 }
 
 #header {
@@ -137,17 +136,12 @@ article > pre {
     margin: 0 auto;
 }
 
-.highlight pre {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
 .footnotes ol::before {
     content: "Footnotes:";
 }
 
 blockquote {
-    border-left: 0.2em solid $foreGroundWhite;
+    border-left: 0.2em solid $textColor;
     padding-left: 10px;
 }
 
@@ -214,7 +208,7 @@ tr:nth-child(2n) {
 }
 
 #TOC {
-    border: 0.075em solid $foreGroundWhite;
+    border: 0.075em solid $textColor;
     padding: 1em;
     margin: 1em 0;
     overflow: auto;
@@ -247,12 +241,20 @@ tr:nth-child(2n) {
     outline: none;
 }
 
+@import "native.scss";
+// override line highlight, tetradic of $link and $text
+.chroma .hl { background-color: shade(#9d5024, 15%); }
+// override line numbers, a bit to dark,
+// tetradic color of old line color and line highlight
+.chroma .hl .lnt { color: #9d9d9d }
+.chroma { color: $textColor }
+
 $hamburger-padding-x           : 0px;
 $hamburger-padding-y           : 0px;
 $hamburger-layer-width         : 1.5em;
 $hamburger-layer-height        : 0.125em;
 $hamburger-layer-spacing       : 0.3125em;
-$hamburger-layer-color         : $foreGroundWhite;
+$hamburger-layer-color         : $textColor;
 $hamburger-hover-opacity       : 1;
 
 $hamburger-types: (

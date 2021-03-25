@@ -12,6 +12,8 @@ defaultContentLanguageInSubdir = true
 
 PluralizeListTitles = false
 
+pygmentsUseClasses = true
+
 [markup]
   defaultMarkdownHandler = "goldmark"
 
