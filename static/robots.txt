@@ -1,4 +1,4 @@
-sitemap: /sitemap.xml
+sitemap: https://blog.thinegen.de/sitemap.xml
 
 User-agent: *
 Disallow: /de/impressum/
