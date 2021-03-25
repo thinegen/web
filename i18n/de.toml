@@ -12,3 +12,6 @@ other = "Alle Änderungen"
 
 [gdprlink]
 other = "Datenschutz"
+
+[toc-hamburger-aria-label]
+other = "Inhaltsverzeichnis anzeigen oder verbergen"

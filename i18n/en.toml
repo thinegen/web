@@ -12,3 +12,6 @@ other = "All changes"
 
 [gdprlink]
 other = "Privacy"
+
+[toc-hamburger-aria-label]
+other = "Hide or show table of contents"
