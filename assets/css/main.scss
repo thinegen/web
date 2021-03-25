@@ -230,6 +230,7 @@ tr:nth-child(2n) {
 #TOCHeader > h2 {
     margin: 0;
     text-decoration: none;
+    display: inline;
 }
 
 #TOCHeader {
@@ -239,6 +240,10 @@ tr:nth-child(2n) {
 
 #TOC-button {
     outline: none;
+}
+
+nav#TableOfContents {
+    display: none;
 }
 
 @import "native.scss";

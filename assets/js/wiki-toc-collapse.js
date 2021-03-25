@@ -3,10 +3,6 @@ window.addEventListener("load", function () {
     var tocDiv = document.querySelector("#TOCHeader");
     var tocNav = document.querySelector("nav#TableOfContents");
 
-
-
-    document.querySelector("#TOCHeader > h2").style.display = "inline";
-
     var hamburgerBtn = document.querySelector("#TOC-button");
     hamburgerBtn.addEventListener("click", function (event) {
         if(tocNav.style.display === "none") {
@@ -21,7 +17,9 @@ window.addEventListener("load", function () {
         event.preventDefault();
     });
 
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        hamburgerBtn.click();
+    if(!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        tocNav.style.display = "unset";
+        tocDiv.style.marginBottom = "0.75em";
+        hamburgerBtn.classList.add("is-active");
     }
 });
