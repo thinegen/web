@@ -1,6 +1,7 @@
 ---
 title: "Datenschutzerklärung"
 publishDate: 2021-03-24
+translationKey: GDPR-statement
 ---
 
 Name and contact of the person responsible: In the [imprint]({{< ref "imprint.md" >}}).

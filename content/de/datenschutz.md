@@ -1,6 +1,7 @@
 ---
 title: "Datenschutzerklärung"
 publishDate: 2021-03-24
+translationKey: GDPR-statement
 ---
 
 Name und Kontakt des Verantwortlichen: Im [Impressum]({{< ref "impressum.md" >}}).

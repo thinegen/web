@@ -60,7 +60,11 @@ pygmentsUseClasses = true
     languageName = "Deutsch"
     contentDir = "content/de"
     languageCode = "de"
+      [languages.de.params]
+        privacyPage = "datenschutz.md"
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
     languageCode = "en"
+      [languages.en.params]
+        privacyPage = "privacy.md"

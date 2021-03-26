@@ -3,7 +3,7 @@ sitemap: https://blog.thinegen.de/sitemap.xml
 User-agent: *
 Disallow: /de/impressum/
 Disallow: /de/404/
-Disallow: /de/dsgvo/
+Disallow: /de/datenschutz/
 Disallow: /en/imprint/
 Disallow: /en/404/
-Disallow: /en/dsgvo/
+Disallow: /en/privacy/
