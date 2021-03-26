@@ -1,0 +1,25 @@
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+    ]
+}
+</script>
+
+{{ define "breadcrumbnav" }}
+    {{ if .p1.Parent }}
+        {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+    {{ else if not .p1.IsHome }}
+        {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+    {{ end }}
+    {{ if not .p1.IsHome }}
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ .p1.Title }}",
+            "item": "{{ .p1.Permalink }}"
+        }
+    {{ end }}
+{{ end }}

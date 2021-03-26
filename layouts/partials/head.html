@@ -34,4 +34,6 @@
     {{if .Description }}
         <meta name="description" content="{{ .Description | safeHTML }}"/>
     {{ end }}
+
+    {{ partial "breadcrumbs.html" . }}
 </head>
