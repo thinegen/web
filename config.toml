@@ -1,6 +1,8 @@
 baseURL = "https://blog.thinegen.de"
 title = "blog.thinegen.de"
 
+enableRobotsTXT = true
+
 pygmentscodefences = true
 pygmentsoptions = "linenos=true"
 
