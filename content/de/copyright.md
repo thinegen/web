@@ -10,4 +10,4 @@ Wenn nicht anders angegeben sind die Texte auf diesem Blog unter der [CC BY-SA 4
 
 Über eine Verlinkung und Information, wo der Text verwendet wird, würde ich mich freuen.
 
-Der Aufbau ist unter der MIT Lizenz lizensiert.
+Das Theme ist unter der MIT Lizenz lizensiert.
