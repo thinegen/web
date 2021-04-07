@@ -1,6 +1,4 @@
 sitemap: https://blog.thinegen.de/sitemap.xml
 
 User-agent: *
-{{ range .Site.AllPages }}
-{{ if .Params.noindex }}Disallow: {{.RelPermalink}}{{ end }}
-{{ end }}
+{{ range .Site.AllPages }}{{ if .Params.noindex }}Disallow: {{.RelPermalink}}{{ print "\n" }}{{ end }}{{ end }}
