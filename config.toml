@@ -16,6 +16,11 @@ PluralizeListTitles = false
 
 pygmentsUseClasses = true
 
+[minify]
+  [minify.tdewolff]
+      [minify.tdewolff.html]
+        KeepQuotes = true
+
 [markup]
   defaultMarkdownHandler = "goldmark"
 
