@@ -2,6 +2,7 @@
 title: "Windows Backslash"
 publishDate: 2021-03-24
 tags: ["windows", "unix"]
+description: "The origin of the  Windows backslash."
 ---
 
 In MS-DOS you could change the path separator backslash (```\```) to a normal slash (```/```). For this you had to change the [```SWITCHCHAR``` parameter](https://github.com/microsoft/MS-DOS/blob/04a3d20ff411409ab98474892b2bb1713bde0f7f/v2.0/bin/CONFIG.DOC#L77) in ```config.sys```. Paths used in this example document generally looked more like Linux paths instead of Windows. ```/dev/``` could even be [enabled](https://github.com/microsoft/MS-DOS/blob/master/v2.0/bin/CONFIG.DOC#L60). To this day, navigation with forward slashes is still possible as well (e.g. ```cd C:\ProgramData```)

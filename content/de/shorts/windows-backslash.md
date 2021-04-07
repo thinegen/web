@@ -2,6 +2,7 @@
 title: "Windows Backslash"
 publishDate: 2021-03-24
 tags: ["windows", "unix"]
+description: "Die Herkunft des Windows Backslash."
 ---
 
 In MS-DOS konnte man den Pfadseparator Backslash (```\```) zu einem normalen Slash (```/```) umstellen. Dazu musste man in der ```config.sys``` den Parameter [```SWITCHCHAR```](https://github.com/microsoft/MS-DOS/blob/04a3d20ff411409ab98474892b2bb1713bde0f7f/v2.0/bin/CONFIG.DOC#L77) ändern. Auch ansonsten sahen die Pfade in diesem Dokument eher nach Unix als nach den heutigen Windowspfaden aus. Der ```/dev/``` Pfad konnte ebenfalls [aktiviert werden](https://github.com/microsoft/MS-DOS/blob/master/v2.0/bin/CONFIG.DOC#L60). Auch heute kann man noch mit normalen Slashes navigieren (z.B. ```cd C:\ProgramData```).
