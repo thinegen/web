@@ -33,7 +33,8 @@ window.addEventListener("load", function () {
     document.addEventListener("mousedown", function (event) {
         if (event.target.className == "footnote-ref"
             || event.target.className == "hoverNote"
-            || event.target.parentNode.className == "hoverNote") {
+            || event.target.parentNode.className == "hoverNote"
+            || event.target.nodename == "HTML") {
             return;
         }
 
