@@ -29,7 +29,7 @@ pygmentsUseClasses = true
   lastmod = [":git", "lastmod", "date", "publishDate"]
 
 [permalinks]
-  blog = "/:sections/:year/:month/:title/"
+  blog = "/:sections/:year/:month/:filename/"
 
 [Params]
   giturl = "https://github.com/thinegen/blog"
