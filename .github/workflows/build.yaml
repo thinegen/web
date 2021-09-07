@@ -20,12 +20,11 @@ jobs:
           hugo-version: '0.81.0'
           extended: true
 
-      - name: Build Hugo site and deploy
-        uses: aormsby/hugo-deploy-to-pages@v2
-        with:
-          hugo_publish_directory: 'public'
-          source_branch: 'main'
-          deploy_branch: 'live'
-          commit_message: 'new build'
-          hugo_build_options: '--minify'
-          fresh_build: true
+      - name: Build
+          run: hugo --minify
+
+      - name: Deploy
+          uses: JamesIves/github-pages-deploy-action@4.1.5
+          branch: 'live'
+          folder: 'public'
+          target-folder: 'public'
