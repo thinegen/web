@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
             sup.appendChild(hoverNote);
 
             sup.firstChild.addEventListener("click", function (event) {
-                this.nextSibling.style.visibility = "visible";
+                this.nextSibling.style.display = "block";
                 event.preventDefault();
             });
         }
@@ -44,7 +44,7 @@ window.addEventListener("load", function () {
         }
 
         for (var i = 0; i < hoverNotes.length; i++) {
-            hoverNotes[i].style.visibility = "hidden";
+            hoverNotes[i].style.display = "none";
         }
     });
 

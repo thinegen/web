@@ -90,7 +90,7 @@ body {
     min-width: 15em;
     padding: 0 1em;
     border: 0.25em solid middle($backgroundColor, $textColor);
-    visibility: hidden;
+    display: none;
 }
 
 .hoverNote a {
