@@ -34,7 +34,7 @@ window.addEventListener("load", function () {
         if (event.target.className == "footnote-ref"
             || event.target.className == "hoverNote"
             || event.target.parentNode.className == "hoverNote"
-            || event.target.nodename == "HTML") {
+            || event.target.nodeName == "HTML") {
             return;
         }
 
