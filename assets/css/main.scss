@@ -111,6 +111,8 @@ body {
 }
 
 #content {
+    max-width: 50em;
+    min-width: 30em;
     width: 66%;
     margin: 0 auto;
     padding: 1.5% 5%;
