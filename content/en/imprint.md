@@ -10,5 +10,5 @@ Thilo Negendanck
 Drausnickstr. 32, 91052 Erlangen, Germany
 
 {{< rawhtml >}}
-<p>mail <u>a</u> blog - thinegen - de</p>
+<p>blog <u>a</u> thinegen - de</p>
 {{< /rawhtml >}}
