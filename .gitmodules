@@ -1,3 +1,3 @@
-[submodule "assets/css/hamburgers"]
-	path = assets/css/hamburgers
-	url = https://github.com/jonsuh/hamburgers.git
+[submodule "themes/schwarz"]
+	path = themes/schwarz
+	url = git@github.com:thinegen/hugo-schwarz.git

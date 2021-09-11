@@ -1,6 +1,8 @@
 baseURL = "https://blog.thinegen.de"
 title = "blog.thinegen.de"
 
+theme = "schwarz"
+
 enableRobotsTXT = true
 
 pygmentscodefences = true
@@ -34,6 +36,9 @@ pygmentsUseClasses = true
 [Params]
   giturl = "https://github.com/thinegen/blog"
   dateFormat = "2006-01-02"
+  showCC = true
+  showBY = true
+  showSA = true
 
 [[languages.de.menu.main]]
   name = "Blog"
@@ -69,9 +74,11 @@ pygmentsUseClasses = true
     languageCode = "de"
       [languages.de.params]
         privacyPage = "datenschutz.md"
+        copyrightPage = "copyright.md"
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
     languageCode = "en"
       [languages.en.params]
         privacyPage = "privacy.md"
+        copyrightPage = "copyright.md"
