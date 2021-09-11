@@ -41,31 +41,40 @@ pygmentsUseClasses = true
   showSA = true
 
 [[languages.de.menu.main]]
-  name = "Blog"
-  url = "/de/blog"
+  name = "Home"
+  url = "/de/"
   weight = 1
 [[languages.en.menu.main]]
-  name = "Blog"
-  url = "/en/blog"
+  name = "Home"
+  url = "/en/"
   weight = 1
+
+  [[languages.de.menu.main]]
+  name = "Blog"
+  url = "/de/blog/"
+  weight = 2
+[[languages.en.menu.main]]
+  name = "Blog"
+  url = "/en/blog/"
+  weight = 2
 
 [[languages.de.menu.main]]
   name = "Shorts"
   url = "/de/shorts/"
-  weight = 2
+  weight = 3
 [[languages.en.menu.main]]
   name = "Shorts"
   url = "/en/shorts/"
-  weight = 2
+  weight = 3
 
 [[languages.de.menu.main]]
   name = "Impressum"
   url = "/de/impressum/"
-  weight = 3
+  weight = 4
 [[languages.en.menu.main]]
   name = "Imprint"
   url = "/en/imprint/"
-  weight = 3
+  weight = 4
 
 [languages]
   [languages.de]
