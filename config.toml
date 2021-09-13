@@ -29,7 +29,6 @@ pygmentsUseClasses = true
 
 [frontmatter]
   date = ["publishDate", "date", "lastmod"]
-  lastmod = [":git", "lastmod", "date", "publishDate"]
 
 [permalinks]
   blog = "/:sections/:year/:month/:filename/"
