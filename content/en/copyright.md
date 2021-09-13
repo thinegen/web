@@ -8,6 +8,6 @@ Unless stated differently, the articles on this blog are licensed under [CC BY-S
 
 > "[Article Title] - blog.thinegen.de, CC BY-SA 4.0"
 
-I would appreciate a link and information where the text is used. However, this is not mandatory.
+I would be happy about an email where the text is used.
 
-The code and theme are licensed under the MIT license.
+The [theme](https://github.com/thinegen/hugo-schwarz) is licensed under the MIT license.

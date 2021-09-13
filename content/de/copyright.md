@@ -8,6 +8,6 @@ Wenn nicht anders angegeben sind die Texte auf diesem Blog unter der [CC BY-SA 4
 
 > &bdquo;[Titel des Textes] - blog.thinegen.de, CC BY-SA 4.0&ldquo;
 
-Über eine Verlinkung und Information, wo der Text verwendet wird, würde ich mich freuen.
+Über eine E-Mail, wo der Text verwendet wird, würde ich mich freuen.
 
-Das Theme ist unter der MIT Lizenz lizensiert.
+Das [Theme](https://github.com/thinegen/hugo-schwarz) ist unter der MIT Lizenz lizensiert.
