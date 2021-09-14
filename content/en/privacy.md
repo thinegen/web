@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-publishDate: 2021-03-24
+layout: "single-page"
 translationKey: GDPR-statement
 noindex: true
 ---
