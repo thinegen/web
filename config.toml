@@ -10,7 +10,6 @@ pygmentsoptions = "linenos=true"
 
 enableGitInfo = true
 rssLimit = 20
-paginate = 20
 
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = true
@@ -39,6 +38,7 @@ pygmentsUseClasses = true
   showCC = true
   showBY = true
   showSA = true
+  sectionsToSortAlphabetically = ["projekte", "projects"]
 
 [[languages.de.menu.main]]
   name = "Home"
@@ -66,6 +66,15 @@ pygmentsUseClasses = true
   name = "Shorts"
   url = "/en/shorts/"
   weight = 3
+
+[[languages.de.menu.main]]
+  name = "Projekte"
+  url = "/de/projekte/"
+  weight = 4
+[[languages.en.menu.main]]
+  name = "Projects"
+  url = "/en/projects/"
+  weight = 4
 
 [languages]
   [languages.de]
