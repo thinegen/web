@@ -5,6 +5,6 @@ tags: ["projekte"]
 translationKey: "3f18ef3ea486264ca0c290c73c75a9de03dc22cf532a7bb24868d8f1431b9a00"
 ---
 
-I made a [website](https://wahlen.thinegen.de) for diagrams of polls for the Bundestagswahl on 26.09.
+Für die Bundestagswahl am 26.09 habe ich [eine Seite](https://wahlen.thinegen.de) mit Diagrammen zu den Wahlumfragen erstellt.
 
-It shows the polls with a 14-day rolling average as well as the difference of the polling institutes to the average of the respective party.
+Sie zeigt die einzelnen Umfragen, einen 14-tägigen gleitenden Mittelwert und die Differenz der einzelnen Umfrageinstitute zum Mittelwert der jeweiligen Partei.
