@@ -1,6 +1,6 @@
 ---
 title: "Random Numbers with LFSR"
-publishDate: 2021-09-10T15:13:47+02:00
+publishDate: 2021-09-10
 tags: ["youtube", "cryptography"]
 translationKey: "2212a75adec30c6c81d85c572e21949375cbbea66d18b62fca251ab6de2de473"
 ---

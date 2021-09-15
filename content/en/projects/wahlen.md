@@ -1,6 +1,6 @@
 ---
 title: "Election poll plots"
-publishDate: 2021-09-14T14:46:22+02:00
+publishDate: 2021-09-14
 translationKey: "52f7f35e471145bf250dd713229e28d18dbb0b122482ef20399ff499cce9d1f5"
 ---
 
