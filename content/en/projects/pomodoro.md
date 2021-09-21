@@ -14,6 +14,6 @@ A simple Pomodoro timer that changes its background over time.
 
 ## (Planned) Features
 
-- [ ] Eigene Zeiteinstellungen
+- [ ] Own timeperiods
 - [ ] Pause
-- [ ] Optionaler Ton nach Ende eines Segments
+- [ ] Optional sound after segments
