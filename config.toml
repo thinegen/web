@@ -1,5 +1,5 @@
-baseURL = "https://blog.thinegen.de"
-title = "blog.thinegen.de"
+baseURL = "https://thinegen.de"
+title = "thinegen.de"
 
 theme = "schwarz"
 
