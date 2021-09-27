@@ -16,4 +16,4 @@ Stellt Diagramme zu Umfragen zur Bundestagswahl dar. Der Zeitraum ist von Bundes
 
 - [X] Gleitender Mittelwert
 - [X] Abweichungen der einzelnen Umfrageinstitute vom Mittelwert
-- [ ] Andere Zeiträume
+- [X] Andere Zeiträume
