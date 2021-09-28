@@ -3,6 +3,7 @@ title: "The other issue with Safari on iOS 15"
 publishDate: 2021-09-28
 tags: ["apple", "ui", "ios", "security"]
 translationKey: "d2df5e60e26c7c57f01d52a06e0a6306b79d52179d2d55d5b7dcf4051f30756f"
+description: "Why I think it is bad that Apple implemented theme-color in iOS 15."
 ---
 
 iOS 15 was published on 20.09.2021. Apart from the adress bar position change, Apple also implemented the [`theme-color` meta-Tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name/theme-color) in Safari.

@@ -3,6 +3,7 @@ title: "Prettymaps"
 publishDate: 2021-10-04
 tags: ["python", "karten", "anleitung"]
 translationKey: "af6a440011923befe87a5557a69f851fbc2ebb9c0f754a176bdd858d49f40221"
+description: "Wie man mit marceloprates/prettymaps schöne Karten erstellt"
 ---
 
 Mit [prettymaps](https://github.com/marceloprates/prettymaps) können schöne Karten einfach erstellt werden.
