@@ -1,6 +1,6 @@
 ---
 title: "Safari und theme-color"
-publishDate: 2021-09-28
+publishDate: 2021-10-11
 tags: ["apple", "ui", "ios", "security"]
 translationKey: "d2df5e60e26c7c57f01d52a06e0a6306b79d52179d2d55d5b7dcf4051f30756f"
 description: "Warum Apple theme-color nicht in iOS 15 hätte implementieren sollen."
