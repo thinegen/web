@@ -16,10 +16,10 @@ A theme for Hugo that is also used on this website.
 
 - [X] Responsive
 - [X] Multilanguage Support
-- [X] Changes documented with GitHub (.Params.giturl)
-- [X] CC Copyright Icons (Params.{showCC, showBY, showSA, showNC, showNCEU, showNCJP, showND})
+- [X] Changes documented with GitHub (`.Site.Params.giturl`)
+- [X] CC Copyright Icons (`.Site.Params.{showCC, showBY, showSA, showNC, showNCEU, showNCJP, showND}`)
 - [X] Main Menu
-- [X] Links for imprint, privacy and copyright (languages.<lang>.params.{imprintPage, copyrightPage, privacyPage})
+- [X] Links for imprint, privacy and copyright (`languages.<lang>.params.{imprintPage, copyrightPage, privacyPage}`)
 - [X] meta descriptions (frontmatter)
-- [X] Sections can be sorted alphabetically as well as by title (sectionsToSortAlphabetically = ["section1", "section2"])
-- [X] Publish the whole article in the RSS feed (.Site.Params.ShowFullRSS)
+- [X] Sections can be sorted alphabetically as well as by title (`.Site.Params.sectionsToSortAlphabetically = ["section1", "section2"]`)
+- [X] Publish the whole article in the RSS feed (`.Site.Params.ShowFullRSS`)
