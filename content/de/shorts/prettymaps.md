@@ -1,7 +1,7 @@
 ---
 title: "Prettymaps"
 publishDate: 2021-10-04
-tags: ["python", "karten", "anleitung"]
+tags: ["python", "karten", "osm", "anleitung"]
 translationKey: "af6a440011923befe87a5557a69f851fbc2ebb9c0f754a176bdd858d49f40221"
 description: "Wie man mit marceloprates/prettymaps schöne Karten erstellt"
 ---
@@ -47,8 +47,8 @@ dilate = 100
 doCircle = False
 
 layers = plot(
-    (52.472458, 13.402859),
-    radius = 2500,
+    'Brandenburger Tor',
+    radius = 950,
     ax = ax,
 
     layers = {
