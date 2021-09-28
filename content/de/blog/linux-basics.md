@@ -1,7 +1,7 @@
 ---
 title: "Linux Basics"
 publishDate: 2021-03-21
-tags: ["linux", "anleitung"]
+tags: ["linux", "tutorial"]
 layout: wiki
 description: "Eine kurze Einführung in Linux mit Aufbau, Befehlen und einigen Grundkonzepten."
 ---
