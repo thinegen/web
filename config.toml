@@ -19,6 +19,9 @@ PluralizeListTitles = false
 
 pygmentsUseClasses = true
 
+[taxonomies]
+    tag = "tags"
+
 [minify]
   [minify.tdewolff]
       [minify.tdewolff.html]
