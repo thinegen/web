@@ -32,9 +32,10 @@ pygmentsUseClasses = true
 
 [permalinks]
   blog = "/:sections/:year/:month/:filename/"
+  shorts = "/:sections/:year/:month/:filename/"
 
 [Params]
-  giturl = "https://github.com/thinegen/blog"
+  giturl = "https://github.com/thinegen/web"
   dateFormat = "2006-01-02"
   showCC = true
   showBY = true
