@@ -1,6 +1,6 @@
 ---
 title: "Prettymaps"
-publishDate: 2021-10-04
+publishDate: 2021-10-11
 tags: ["python", "karten", "osm", "tutorial"]
 translationKey: "af6a440011923befe87a5557a69f851fbc2ebb9c0f754a176bdd858d49f40221"
 description: "Wie man mit marceloprates/prettymaps schöne Karten erstellt"
