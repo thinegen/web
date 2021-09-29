@@ -8,7 +8,7 @@ description: "Wie man mit marceloprates/prettymaps schöne Karten erstellt"
 
 Mit [prettymaps](https://github.com/marceloprates/prettymaps) können schöne Karten einfach erstellt werden.
 
-{{< img src="prettymaps-example.png" alt="prettymaps Beispiel" >}}
+![prettymaps Beispiel](prettymaps-example.png)
 
 Im Code selber kann `circle = False` gesetzt werden um eine quadratische Karte zu bekommen. Mit `dilate` können die Ecken des Quadrats dann abgerundet werden.  
 Außerdem kann man bei `buildings` `'union': False` setzen, um Häuser einzeln zu rendern.

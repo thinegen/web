@@ -14,19 +14,19 @@ The `theme-color` tag is used to extend the websites design by coloring elements
 <meta name="theme-color" content="#4285f4">
 ~~~
 
-{{< img src="meta-tag-theme-color.png" caption="Image by Google (<a href=\"https://developers.google.com/web/fundamentals/design-and-ux/browser-customization\">Icons & Browser Colors</a>), licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>. Edited."  alt="Example usage of the theme-color tag" >}}
+![Image by Google (<a href=\"https://developers.google.com/web/fundamentals/design-and-ux/browser-customization\">Icons & Browser Colors</a>), licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>. Edited.](meta-tag-theme-color.png "Example usage of the theme-color tag")
 
 In iOS 15 that means changing the color of the status bar that is used since iOS 14 to [indicate microphone or camera usage](https://support.apple.com/en-us/HT211876).
 
-{{< img src="indicators-iOS15.png" caption="Screen recording, microphone and camera usage indicators; normal status bar" >}}
+![Screen recording, microphone and camera usage indicators; normal status bar](indicators-iOS15.png)
 
 To keep a website from completely blocking these indicators with the `theme-color` tag, they are full-width and pulsing now. The theme color, however, still has some influence over the bars color:
 
-{{< img src="indicators-colored-iOS15.png" caption="microphone on and no <code>theme-color</code> tag, pulsing; microphone on and <code>theme color #ff8e00</code>, pulsing; no microphone, <code>theme color #ff8e00</code>, static" >}}
+![microphone on and no `theme-color` tag, pulsing; microphone on and `theme color #ff8e00`, pulsing; no microphone, `theme color #ff8e00`, static](indicators-colored-iOS15.png)
 
 This makes the status bar less valuable as an area to have security indicators in. These areas are important though.  
 One example is the windows UAC window. The screen is darkened and the only element on it is the question for elevated rights with information about the program asking for them. This makes it clear to the user that something important is happening.
 
-{{< img src="uac.png" caption="Administratoranfrage eines Programms" >}}
+![Administratoranfrage eines Programms](uac.png)
 
 Apple has lost this advantage, at least in Safari.

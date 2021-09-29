@@ -23,3 +23,4 @@ Ein Hugo Theme, das auch auf dieser Seite benutzt wird.
 - [X] meta descriptions (frontmatter)
 - [X] Sections können sowohl nach Datum als auch alphabetisch sortiert werden (`.Site.Params.sectionsToSortAlphabetically = ["section1", "section2"]`)
 - [X] Möglichkeit, per RSS den ganzen Artikel auszugeben (`.Site.Params.ShowFullRSS`)
+- [X] Möglichkeit, externe Links zu markieren (`.Site.Params.markExternalLinks`)

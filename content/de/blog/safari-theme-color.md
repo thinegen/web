@@ -14,20 +14,20 @@ Der `theme-color` Tag ist dafür gedacht, Teile des Browsers in das Design der W
 <meta name="theme-color" content="#4285f4">
 ~~~
 
-{{< img src="meta-tag-theme-color.png" caption="Bild von Google (<a href=\"https://developers.google.com/web/fundamentals/design-and-ux/browser-customization\">Icons & Browser Colors</a>), lizensiert unter <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC BY 4.0</a>. Bearbeitet." alt="Beispiel für die Nutzung des theme-color tags" >}}
+![Bild von Google [Icons and Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/), lizensiert unter [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Bearbeitet.](meta-tag-theme-color.png "Beispiel für die Nutzung des theme-color tags")
 
 in iOS 15 wird die Farbe der Statusleiste am oberen Ende des Bildschirms verändert, die seit iOS 14 aber auch die [Indikatoren für Mikrophon- oder Kameranutzung](https://support.apple.com/de-de/HT211876) enthält.
 
-{{< img src="indicators-iOS15.png" caption="Bildschirmaufnahme, Mikrophonnutzung und Kameranutzung; normale Leiste" >}}
+![Bildschirmaufnahme, Mikrophonnutzung und Kameranutzung; normale Leiste](indicators-iOS15.png)
 
 Vermutlich um zu verhindern das der Indikator durch den `theme-color` tag unkenntlich gemacht wird, pulsiert der Indikator jetzt über die komplette Breite der Statusleiste. Trotzdem hat der tag Einfluss auf die Farbe der Statusleiste:
 
-{{< img src="indicators-colored-iOS15.png" caption="Mikrophon an und kein <code>theme-color</code> tag, pulsierend; Mikrophon an und <code>theme color #ff8e00</code>, pulsierend; kein Mikrophon, <code>theme color #ff8e00</code>, statisch" >}}
+![Mikrophon an und kein `theme-color` tag, pulsierend; Mikrophon an und `theme color #ff8e00`, pulsierend; kein Mikrophon, `theme color #ff8e00`, statisch](indicators-colored-iOS15.png)
 
 Dadurch wird die Statusleiste als "sicherer Bereich", in dem nur das Betriebssystem Änderungen vornehmen kann[^1], verwässert. Solche sicheren Bereiche sind aber wichtig und sollten nicht verändert werden können.  
 Ein Beispiel sind die Administratoranfragen unter Windows: Der ganze Bildschirm wird abgedunkelt, und es ist nur noch die Abfrage mit Informationen zum Programm zu sehen. Der Nutzer weiß, das etwas wichtiges passiert.
 [^1]: Ausgenommen Apps im Vollbildmodus. Hier wird die Leiste komplett versteckt.
 
-{{< img src="uac.png" caption="Administratoranfrage eines Programms" >}}
+![Administratoranfrage eines Programms](uac.png)
 
 Diesen Vorteil hat Apple zumindest in Safari verspielt.
