@@ -8,7 +8,8 @@ description: "How to create pretty maps with marceloprates/prettymaps"
 
 [prettymaps](https://github.com/marceloprates/prettymaps) can easily create pretty maps.
 
-![prettymaps example](prettymaps-example.png)
+![Data © OpenStreetMap contributors](prettymaps-example.png)
+![appr. (51.585864, 4.997360). Data © OpenStreetMap contributors](prettymaps-example2.png)
 
 `circle = False` creates a square map. The corners can be rounded by setting `dilate` to an integer.  
 For `buildings`, `'union'` can be set to `False` to render building separately.
@@ -48,7 +49,8 @@ doCircle = False
 
 layers = plot(
     'Brandenburger Tor',
-    radius = 950,
+    # Or coordinates  (52.516344, 13.377737)
+    radius = 970,
     ax = ax,
 
     layers = {

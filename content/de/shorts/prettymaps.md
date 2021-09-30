@@ -8,7 +8,8 @@ description: "Wie man mit marceloprates/prettymaps schöne Karten erstellt"
 
 Mit [prettymaps](https://github.com/marceloprates/prettymaps) können schöne Karten einfach erstellt werden.
 
-![prettymaps Beispiel](prettymaps-example.png)
+![Data © OpenStreetMap contributors](prettymaps-example.png)
+![ca. (51.585864, 4.997360). Data © OpenStreetMap contributors](prettymaps-example2.png)
 
 Im Code selber kann `circle = False` gesetzt werden um eine quadratische Karte zu bekommen. Mit `dilate` können die Ecken des Quadrats dann abgerundet werden.  
 Außerdem kann man bei `buildings` `'union': False` setzen, um Häuser einzeln zu rendern.
@@ -48,7 +49,8 @@ doCircle = False
 
 layers = plot(
     'Brandenburger Tor',
-    radius = 950,
+    # Oder Koordinaten  (52.516344, 13.377737)
+    radius = 970,
     ax = ax,
 
     layers = {
