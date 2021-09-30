@@ -28,6 +28,6 @@ Dadurch wird die Statusleiste als "sicherer Bereich", in dem nur das Betriebssys
 Ein Beispiel sind die Administratoranfragen unter Windows: Der ganze Bildschirm wird abgedunkelt, und es ist nur noch die Abfrage mit Informationen zum Programm zu sehen. Der Nutzer weiß, das etwas wichtiges passiert.
 [^1]: Ausgenommen Apps im Vollbildmodus. Hier wird die Leiste komplett versteckt.
 
-![Administratoranfrage eines Programms](uac.png)
+![Administratoranfrage eines Programms in Windows](uac.png)
 
 Diesen Vorteil hat Apple zumindest in Safari verspielt.

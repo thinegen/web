@@ -27,6 +27,6 @@ To keep a website from completely blocking these indicators with the `theme-colo
 This makes the status bar less valuable as an area to have security indicators in. These areas are important though.  
 One example is the windows UAC window. The screen is darkened and the only element on it is the question for elevated rights with information about the program asking for them. This makes it clear to the user that something important is happening.
 
-![Administratoranfrage eines Programms](uac.png)
+![UAC question on Windows](uac.png)
 
 Apple has lost this advantage, at least in Safari.

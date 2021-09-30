@@ -8,8 +8,8 @@ description: "How to create pretty maps with marceloprates/prettymaps"
 
 [prettymaps](https://github.com/marceloprates/prettymaps) can easily create pretty maps.
 
-![Data © OpenStreetMap contributors](prettymaps-example.png)
-![appr. (51.585864, 4.997360). Data © OpenStreetMap contributors](prettymaps-example2.png)
+![Data © OpenStreetMap contributors](prettymaps-example.png "Beispielkarte von Berlin (eckig)" )
+![appr. (51.585864, 4.997360). Data © OpenStreetMap contributors](prettymaps-example2.png "Beispielkarte aus Tilburg (rund)" )
 
 `circle = False` creates a square map. The corners can be rounded by setting `dilate` to an integer.  
 For `buildings`, `'union'` can be set to `False` to render building separately.
