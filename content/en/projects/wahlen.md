@@ -16,4 +16,5 @@ Displays plots for Bundestagswahl polls. The plot period is from the last electi
 
 - [X] Rolling average
 - [X] Differences between institutes and the rolling avg
-- [X] Other time periods
+- [X] Different election periods
+- [X] Option for smooth curves and annotations (in German)
