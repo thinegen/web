@@ -90,7 +90,7 @@ pygmentsUseClasses = true
       imprintPage = "impressum.md"
       privacyPage = "datenschutz.md"
       copyrightPage = "copyright.md"
-      description = "Ein paar Projekte und Gedanken zu den Themen, auf die ich gerade Lust habe."
+      description = "Ein paar Gedanken und Projekte zu den Themen, auf die ich gerade Lust habe."
   [languages.en]
     languageName = "English"
     contentDir = "content/en"
