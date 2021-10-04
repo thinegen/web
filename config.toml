@@ -44,6 +44,7 @@ pygmentsUseClasses = true
   showBY = true
   showSA = true
   sectionsToSortAlphabetically = ["projekte", "projects"]
+  noindexImages = true
 
 [[languages.de.menu.main]]
   name = "Home"
