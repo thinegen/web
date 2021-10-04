@@ -2,6 +2,7 @@
 title: "The other issue with Safari on iOS 15"
 publishDate: 2021-10-04
 tags: ["apple", "ui", "ios", "security"]
+draft: true
 translationKey: "d2df5e60e26c7c57f01d52a06e0a6306b79d52179d2d55d5b7dcf4051f30756f"
 description: "Why I think it is bad that Apple implemented theme-color in iOS 15."
 ---
