@@ -1,5 +1,5 @@
 ---
-title: "Safari und theme-color"
+title: "Safari und meta theme-color"
 publishDate: 2021-10-05
 tags: ["apple", "ui", "ios", "security"]
 translationKey: "d2df5e60e26c7c57f01d52a06e0a6306b79d52179d2d55d5b7dcf4051f30756f"
