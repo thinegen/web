@@ -46,9 +46,11 @@ pygmentsUseClasses = true
   noindexImages = true
 
 [[languages.de.menu.main]]
+  url = "/"
   name = "Home"
   weight = 1
 [[languages.en.menu.main]]
+  url = "/"
   name = "Home"
   weight = 1
 
