@@ -11,7 +11,7 @@ Problem: Wie bekommt man eine Gleichverteilung von Punkten in einem Kreis? Die I
 
 ![$(x, y)$ = (random(), random())](random_distribution_square.png "Gleichverteilung von 10000 Punkten in einem Quadrat")
 
-Eine naive Idee für einen Kreis kann sein, alle Punkte zu ignorieren, die außerhalb des Kreises liegen. Dafür berechnet man $ \sqrt{x^2 * y^2} $.
+Eine naive Idee für einen Kreis kann sein, alle Punkte zu ignorieren, die außerhalb des Kreises liegen. Dafür berechnet man $ \sqrt{x^2 \* y^2} $.
 
 ![$(x, y)$ = (random(), random()), Kreis eingefärbt](random_distribution_red_outof_circle.png "10000 Punkte in einem Quadrat, alle im Kreis sind eingefärbt")
 
@@ -55,6 +55,8 @@ $$ $$
 F^{-1}(x) = R * \sqrt{x}
 $$
 
+![Die Graphen der genutzten Funktionen](random_uniform_circle_graphs.png)
+
 Wir können diesen größtmöglichen Wert als unseren tatsächlichen Wert für den Radius wählen. Damit haben wir eine Menge von gleichverteilten Punkten in einem Kreis.
 
-![Die Graphen der genutzten Funktionen](random_uniform_circle_graphs.png)
+![$(r, \varphi)$ = (sqrt(random()), random() * $2 \pi$)](random_uniform_full_circle.png "Ein voller Kreis")
