@@ -17,7 +17,7 @@ Eine naive Idee für einen Kreis kann sein, alle Punkte zu ignorieren, die auße
 
 Das ist aber nicht effizient. Man verliert mehr als ein Fünftel aller Punkte![^1]
 
-[^1]: $$1 - A_{Kreis} / A_{Quadrat} = $$ $$ 1 - (((\frac{R}{2})^2 * \pi) / R^2) = $$ $$ 1 - \frac{\pi}{4} \approx 0.2146$$
+[^1]: $$1 - \frac{A_{Kreis}}{A_{Quadrat}} = $$ $$ 1 - \frac{R^2\pi}{(2R)^2} = $$ $$ 1 - \frac{\pi}{4} \approx 0.2146$$
 
 Vielleicht hilft ein anderes Koordinatensystem. Beim Polarkoordinatensystem wird ein Punkt durch einen Radius und einen Winkel, $(r, \varphi)$, angegeben.
 
