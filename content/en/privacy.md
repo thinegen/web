@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 layout: "single-page"
 translationKey: GDPR-statement
-noindex: true
+nolist: true
 ---
 
 Name and contact of the person responsible: In the [imprint]({{< ref "imprint.md" >}}).

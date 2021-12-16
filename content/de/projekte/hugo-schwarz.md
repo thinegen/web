@@ -22,6 +22,7 @@ Ein Hugo Theme, das auch auf dieser Seite benutzt wird.
 - [X] Links für Impressum, Datenschutz und Copyright (`languages.<lang>.params.{imprintPage, copyrightPage, privacyPage}`)
 - [X] meta descriptions (frontmatter)
 - [X] Sections können sowohl nach Datum als auch alphabetisch sortiert werden (`.Site.Params.sectionsToSortAlphabetically = ["section1", "section2"]`)
+- [X] Seiten können aus Listen ausgeschlossen werden (`nolist: true`)
 - [X] Möglichkeit, per RSS den ganzen Artikel auszugeben (`.Site.Params.ShowFullRSS`)
 - [X] Möglichkeit, externe Links zu markieren (`.Site.Params.markExternalLinks`)
 - [X] Bilder per noindex aus Suchmaschinen halten (`.Site.Params.noindexImages`)

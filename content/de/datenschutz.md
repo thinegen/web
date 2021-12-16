@@ -2,7 +2,7 @@
 title: "Datenschutzerklärung"
 layout: "single-page"
 translationKey: GDPR-statement
-noindex: true
+nolist: true
 ---
 
 Name und Kontakt des Verantwortlichen: Im [Impressum]({{< ref "impressum.md" >}}).

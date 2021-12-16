@@ -22,6 +22,7 @@ A theme for Hugo that is also used on this website.
 - [X] Links for imprint, privacy and copyright (`languages.<lang>.params.{imprintPage, copyrightPage, privacyPage}`)
 - [X] meta descriptions (frontmatter)
 - [X] Sections can be sorted alphabetically as well as by title (`.Site.Params.sectionsToSortAlphabetically = ["section1", "section2"]`)
+- [X] Pages can be excluded from lists (`noList: true`)
 - [X] Publish the whole article in the RSS feed (`.Site.Params.ShowFullRSS`)
 - [X] Possibility to mark external links (`.Site.Params.markExternalLinks`)
 - [X] Hide images from search engines (`.Site.Params.noindexImages`)
