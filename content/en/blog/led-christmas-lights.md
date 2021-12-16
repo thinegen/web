@@ -1,5 +1,5 @@
 ---
-title: "LED Strip for Christmas Tree"
+title: "LED Christmas Tree Lights"
 publishDate: 2021-12-16
 tags: ["python", "hardware", "linux", "tutorial"]
 translationKey: "9ba6c75b3ec8caabb54bfe85c4702c88baa55537b53fcaac0920151d5708ae67"
