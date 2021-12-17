@@ -5,7 +5,7 @@ tags: ["firefox", "network"]
 translationKey: "37257ea300fd9c0e206720629723a330b27e3d1613c6294df5a210a970218750"
 ---
 
-Wenn man ein Datum in die Adressleiste von Firefox eingibt, wird es umgeschrieben. Das selbe gilt für alle datumsähnlichen Strings, bei denen der Tag und Monat kleiner 256 und das Jahr kleiner 65536 ist.
+Wenn man ein Datum in die Adressleiste von Firefox[^1] eingibt, wird es umgeschrieben. Das selbe gilt für alle datumsähnlichen Strings, bei denen der Tag und Monat kleiner 256 und das Jahr kleiner 65536 ist.
 [^1]: Aktuell benutze ich Firefox 94.0.2
 
 Der Grund dafür ist, das Firefox das Datum als IP-Adresse interpretiert: Tag und Monat bilden die ersten beiden Oktette der Adresse, die letzte Zahl wird mit Nullen gepaddet und als die letzten zwei Oktette interpretiert.
