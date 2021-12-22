@@ -38,6 +38,8 @@ This code falls under the category "works for me". I build the whole thing about
 
 It runs on Python `2.7` with Adafruit-GPIO `1.0.3` and Adafruit-WS2801 `1.0.1`.
 
+Parts of it come from [tutorials-raspberrypi.de](https://tutorials-raspberrypi.de/raspberry-pi-ws2801-rgb-led-streifen-anschliessen-steuern/).
+
 ~~~Python
 from __future__ import print_function
 
